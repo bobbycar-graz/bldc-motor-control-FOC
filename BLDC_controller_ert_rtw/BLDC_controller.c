@@ -2124,7 +2124,7 @@ void BLDC_controller_step(RT_MODEL *const rtM)
        *  Sum: '<S42>/Sum1'
        *  Sum: '<S42>/Sum3'
        */
-      rtb_Divide14_e = (uint16_T)(((int16_T)(DataTypeConversion2 -
+      rtb_Divide14_e = (uint16_T)(((int16_T)(rtP->r_fieldWeakHi -
         rtP->r_fieldWeakLo) << 15) / (int16_T)(rtP->r_fieldWeakHi -
         rtP->r_fieldWeakLo));
 
